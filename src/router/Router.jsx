@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import Landing from "../pages/Landing";
 import Home from "../pages/Home";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Signup from "../pages/Signup";
+import Signin from "../pages/Signin";
+import Details from "../pages/Details";
 
 function Layout() {
   return (
@@ -14,14 +16,29 @@ function Layout() {
     </>
   );
 }
+function Auth() {
+  return (
+    <>
+      <Outlet />
+    </>
+  );
+}
 
 const router = createBrowserRouter([
+  {
+    path: "/auth",
+    element: <Auth />,
+    children: [
+      { path: "signin", element: <Signin /> },
+      { index:true, element: <Signup /> },
+    ],
+  },
   {
     path: "/",
     element: <Layout />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "landing", element: <Landing /> },
+      { path: "details", element: <Details /> },
     ],
   },
 ]);
