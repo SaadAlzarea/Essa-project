@@ -124,7 +124,7 @@ function Signup() {
                 <p className="text-sm font-medium text-center">
                   Already have account{" "}
                   <span className="text-purple-900">
-                    <Link to={"/auth"}>SginIn</Link>
+                    <Link to={"/auth/"}>SginIn</Link>
                   </span>
                 </p>
               </div>
