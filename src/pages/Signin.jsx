@@ -35,8 +35,7 @@ function Signin() {
         <div className="w-50 flex flex-col justify-center  text-white p-2">
           <p className="text-2xl font-bold text-center w-full p-3">UNITY</p>
           <p className="text-center ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            dolorum autem rem
+            SignIn
           </p>
         </div>
         <div className="p-3 rounded-r-lg bg-white">
@@ -79,7 +78,7 @@ function Signin() {
                 <p className="text-sm font-medium text-center">
                   To create new account{" "}
                   <span className="text-purple-900">
-                    <Link to={"signin"}>SignUp</Link>
+                    <Link to={"signup"}>SignUp</Link>
                   </span>
                 </p>
               </div>

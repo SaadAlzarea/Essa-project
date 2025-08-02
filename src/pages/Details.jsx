@@ -111,10 +111,12 @@ function Details() {
         );
       })}
       <div className="px-3 flex justify-center items-center">
-        <button className="p-2 flex items-center justify-center gap-1 text-white my-5 bg-purple-600 rounded-md">
-          Booking
-          <FaPlus />
-        </button>
+        <Link to={"/detailsA"} >
+          <button className="p-2 flex items-center justify-center gap-1 text-white my-5 bg-purple-600 rounded-md">
+            Booking
+            <FaPlus />
+          </button>
+        </Link>
       </div>
     </div>
   );
